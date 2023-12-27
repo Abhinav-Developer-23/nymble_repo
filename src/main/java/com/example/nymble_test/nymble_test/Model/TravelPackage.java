@@ -7,6 +7,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -14,6 +15,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 public class TravelPackage {
 
     @Id
@@ -30,4 +32,6 @@ public class TravelPackage {
     @JsonManagedReference
     @OneToMany(mappedBy = "travelPackage", fetch = FetchType.EAGER)
     private List<Passenger> passengers;
+
+
 }
