@@ -1,0 +1,7 @@
+
+
+
+curl -L 'http://localhost:8080/travel-package?id=1'
+curl -L 'http://localhost:8080/passengers?id=3'
+curl -L 'http://localhost:8080/get-free-activities'
+curl -L 'http://localhost:8080/travel-package-passengers?id=1'
